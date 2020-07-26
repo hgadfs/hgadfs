@@ -20,4 +20,9 @@
     <iframe src="https://script.google.com/macros/s/AKfycbxUP-_njoO7S7-WRCzoXVLnm7CR3zHlkoaPzRUMOVpP0ku5dsQ/exec" width="100%" height="1000px" style="border:none;">
     </iframe>    
   </body>
+  <script>
+    window.onbeforeunload = function(e) {
+      return 'Are you sure you want to leave this page?  You will lose any unsaved data.';
+    };
+</script>
 </html>
