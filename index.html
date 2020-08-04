@@ -24,7 +24,7 @@
     window.onmessage = (event) => {
       if(event.targetOrigin=="https://hgadfs.github.io/hgadfs/")
        alert(${event.data});
-        //console.log(`Received message: ${event.data}`);
+       console.log(`Received message: ${event.data}`);
     };
     window.onbeforeunload = function(e) {
       return '¿Esta seguro que quiere salir de la pagina? Los cambios realizados se perderán.';
