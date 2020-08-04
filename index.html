@@ -21,6 +21,11 @@
     </iframe>    
   </body>
   <script>
+    window.onmessage = (event) => {
+      if(event.targetOrigin=="https://script.google.com/macros/s/AKfycbxUP-_njoO7S7-WRCzoXVLnm7CR3zHlkoaPzRUMOVpP0ku5dsQ/exec")
+       alert(${event.data});
+        //console.log(`Received message: ${event.data}`);
+    };
     window.onbeforeunload = function(e) {
       return '¿Esta seguro que quiere salir de la pagina? Los cambios realizados se perderán.';
     };
