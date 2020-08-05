@@ -22,6 +22,8 @@
   </body>
   <script>
     window.onmessage = (event) => {
+      alert(event.targetOrigin);
+      alert(event.data.toString());
       if(event.targetOrigin=="https://hgadfs.github.io")
        alert(event.data.toString());
        console.log(event.data.toString());
