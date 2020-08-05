@@ -22,10 +22,10 @@
   </body>
   <script>
     window.onmessage = (event) => {
-      alert("event.targetOrigin(Out): "+ event.targetOrigin);
+      alert("event.targetOrigin(Out): "+ event.origin);
       alert("event.data.toString()(Out):"+event.data.toString());
-      if(event.targetOrigin=="https://hgadfs.github.io"){
-      alert("event.targetOrigin(In): "+ event.targetOrigin);
+      if(event.origin=="https://hgadfs.github.io"){
+      alert("event.targetOrigin(In): "+ event.origin);
       alert("event.data.toString()(In):"+event.data.toString());
        console.log(event.data.toString());
       };
