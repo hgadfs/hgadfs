@@ -22,11 +22,13 @@
   </body>
   <script>
     window.onmessage = (event) => {
-      alert(event.targetOrigin);
-      alert(event.data.toString());
-      if(event.targetOrigin=="https://hgadfs.github.io")
-       alert(event.data.toString());
+      alert("event.targetOrigin(Out): "+ event.targetOrigin);
+      alert("event.data.toString()(Out):"+event.data.toString());
+      if(event.targetOrigin=="https://hgadfs.github.io"){
+      alert("event.targetOrigin(In): "+ event.targetOrigin);
+      alert("event.data.toString()(In):"+event.data.toString());
        console.log(event.data.toString());
+      };
     };
     window.onbeforeunload = function(e) {
       return '¿Esta seguro que quiere salir de la pagina? Los cambios realizados se perderán.';
