@@ -22,8 +22,8 @@
   </body>
   <script>
     window.onmessage = (event) => {
-       alert(event.data.toString());
-       console.log(event.data.toString());
+       //alert(event.data.toString());
+       //console.log(event.data.toString());
 
       //if(event.targetOrigin=="https://hgadfs.github.io/hgadfs/")
       // alert(${event.data});
@@ -32,6 +32,6 @@
     window.onbeforeunload = function(e) {
       return '¿Esta seguro que quiere salir de la pagina? Los cambios realizados se perderán.';
     };
-    window.postMessage('hello there', "https://hgadfs.github.io/hgadfs/");
+    //window.postMessage('hello there', "https://hgadfs.github.io/hgadfs/");
 </script>
 </html>
