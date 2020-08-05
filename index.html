@@ -23,6 +23,7 @@
   <script>
     window.onmessage = (event) => {
       alert("event.targetOrigin(Out): "+ event.origin);
+      alert("event(Out): "+ event);
       alert("event.data.toString()(Out):"+event.data.toString());
       if(event.origin=="https://hgadfs.github.io"){
       alert("event.targetOrigin(In): "+ event.origin);
