@@ -22,12 +22,9 @@
   </body>
   <script>
     window.onmessage = (event) => {
+      if(event.targetOrigin=="https://n-jfgbkl44lsz2x22yipxn2zjcsxdgf23ir26faca-0lu-script.googleusercontent.com/userCodeAppPanel")
        alert(event.data.toString());
        console.log(event.data.toString());
-
-      //if(event.targetOrigin=="https://hgadfs.github.io/hgadfs/")
-      // alert(${event.data});
-      // console.log(${event.data});
     };
     window.onbeforeunload = function(e) {
       return '¿Esta seguro que quiere salir de la pagina? Los cambios realizados se perderán.';
