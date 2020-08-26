@@ -27,10 +27,11 @@
         || document.documentElement.clientHeight
         || document.body.clientHeight;
        //alert(window.innerHeight);
-       alert(document.documentElement.clientHeight);
-       alert(document.body.clientHeight);
+       //alert(document.documentElement.clientHeight);
+       //alert(document.body.clientHeight);
        WinHeight = h;
        document.getElementById("grlFrm").style.height  = WinHeight.toString() +"px";
+       alert(document.getElementById("grlFrm").style.height);
     })
     window.onmessage = (event) => {
       //document.getElementById("grlFrm").style.height = event.data.toString() +"px";
