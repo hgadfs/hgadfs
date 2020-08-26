@@ -20,12 +20,23 @@
     </iframe>    
   </body>
   <script>
+     Var WinHeight = 0;
+     $(document).ready(function(){
+        var h = window.innerHeight
+        || document.documentElement.clientHeight
+        || document.body.clientHeight;
+       WinHeight = h;
+       document.getElementById("grlFrm").style.height  = WinHeight.toString() +"px";
+    })
     window.onmessage = (event) => {
       //document.getElementById("grlFrm").style.height = event.data.toString() +"px";
       //alert("Out: "+event.data.toString() +"px");
       //alert("Out: "+event.origin);
       if(event.origin=="https://n-trcyxyslrgrplg4kpny6kqimsxygodtx2vne5iy-0lu-script.googleusercontent.com"){
-      document.getElementById("grlFrm").style.height = event.data.toString() +"px";
+        if(WinHeight<event.data)
+          document.getElementById("grlFrm").style.height = event.data.toString() +"px";
+        else
+          document.getElementById("grlFrm").style.height = WinHeight.toString() +"px";
       //alert("aca: "+event.data.toString() +"px");
       
       //alert("event.targetOrigin(In): "+ event.origin);
