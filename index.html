@@ -21,10 +21,14 @@
   </body>
   <script>
      Var WinHeight = 0;
+     
      $(document).ready(function(){
         var h = window.innerHeight
         || document.documentElement.clientHeight
         || document.body.clientHeight;
+       alert(window.innerHeight);
+       alert(document.documentElement.clientHeight);
+       alert(document.body.clientHeight);
        WinHeight = h;
        document.getElementById("grlFrm").style.height  = WinHeight.toString() +"px";
     })
